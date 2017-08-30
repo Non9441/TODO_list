@@ -7,3 +7,41 @@
   color: black;
   background: white;
 }
+.content {
+  display: flex;
+}
+
+.todo-input {
+  flex: 1;
+  font-size: 29px;
+}
+
+.todo-btn {
+  width: 100px;
+  height: 50px;
+}
+
+.todo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.todo {
+
+  text-align:  left;
+  padding: 20px;
+  border: 1px rgb(222, 18, 85) solid;
+  flex: 1;
+}
+
+.remove-btn {
+  width: 100px;
+  height: 56px;
+  background: rgb(247, 57, 5);
+  color: white;
+}
+/*
+.input-checkbox {
+  width: 80px;
+  height: 40px;
+}*/
