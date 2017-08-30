@@ -29,10 +29,16 @@ class App extends Component {
     localStorage.setItem('todos',JSON.stringify(todos))
   }
   removeTodo = (index) =>() => {
+    const todo = {
+      text: this.state.text
+    }
+    const todos = [...this.state.todos.slice(0,index),...this.state.todos.slice(index+1)];
     this.setState({
       todos: [...this.state.todos.slice(0,index),...this.state.todos.slice(index+1)]
     })
+    localStorage.setItem('todos',JSON.stringify(todos))
   }
+
   render() {
     return (
       <div className="App">
